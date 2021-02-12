@@ -1,2 +1,4 @@
-import { bufferCount$ } from "./transformation-operators/buffer-count";
-bufferCount$.subscribe(data => console.log(data));
+import { bufferTime$ } from "./transformation-operators/buffer-time";
+bufferTime$.subscribe(buffer =>
+  buffer.map((e: any) => console.log(e.target.value))
+);

@@ -1,6 +1,2 @@
-import { of2$ } from "./creation-operators/of";
-of2$.subscribe(data => {
-  if (typeof data === "function") {
-    data();
-  }
-});
+import { endWith$ } from "./combination-operators/endwith";
+endWith$.subscribe(console.log);

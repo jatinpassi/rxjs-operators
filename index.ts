@@ -1,2 +1,2 @@
-import { merge$, merge2$ } from "./combination-operators/merge";
-merge2$.subscribe(console.log);
+import { mergeAll$ } from "./combination-operators/merge-all";
+mergeAll$.subscribe(console.log);

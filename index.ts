@@ -1,2 +1,2 @@
-import { bufferWhen$ } from "./transformation-operators/buffer-when";
-bufferWhen$.subscribe(val=>console.log(val))
+import { combineLatest2$ } from "./combination-operators/combine-latest";
+combineLatest2$.subscribe(val => console.log(val));

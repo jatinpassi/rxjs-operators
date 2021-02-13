@@ -1,2 +1,2 @@
-import { concatAll$ } from "./combination-operators/concat-all";
-concatAll$.subscribe(console.log);
+import { merge$, merge2$ } from "./combination-operators/merge";
+merge2$.subscribe(console.log);

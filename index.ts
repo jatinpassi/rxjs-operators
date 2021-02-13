@@ -1,2 +1,6 @@
-import { combineLatest2$ } from "./combination-operators/combine-latest";
-combineLatest2$.subscribe(val => console.log(val));
+import { of2$ } from "./creation-operators/of";
+of2$.subscribe(data => {
+  if (typeof data === "function") {
+    data();
+  }
+});

@@ -1,2 +1,2 @@
-import { throttle$ } from "./filtering-operators/throttle";
-throttle$.subscribe(e => console.log("debounce:", e.target.value));
+import { throttleTime$ } from "./filtering-operators/throttle-time";
+throttleTime$.subscribe(e => console.log("debounce:", e.target.value));

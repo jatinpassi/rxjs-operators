@@ -1,2 +1,2 @@
-import { skipWhile$ } from "./filtering-operators/skip-while";
-skipWhile$.subscribe(e => console.log("skip:", e));
+import { pairwise$ } from "./combination-operators/pairwise";
+pairwise$.subscribe(e => console.log("skip:", e));

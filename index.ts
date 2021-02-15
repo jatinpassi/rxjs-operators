@@ -1,2 +1,2 @@
-import { skipUntil$ } from "./filtering-operators/skip-until";
-skipUntil$.subscribe(e => console.log("skip:", e));
+import { skipWhile$ } from "./filtering-operators/skip-while";
+skipWhile$.subscribe(e => console.log("skip:", e));

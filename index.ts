@@ -1,2 +1,2 @@
-import { filter$ } from "./filtering-operators/filter";
-filter$.subscribe(e => console.log("distinct:", e));
+import { find$ } from "./filtering-operators/find";
+find$.subscribe(e => console.log("find:", e));

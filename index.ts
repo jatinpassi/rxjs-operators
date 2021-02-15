@@ -1,2 +1,2 @@
-import { skip$ } from "./filtering-operators/skip";
-skip$.subscribe(e => console.log("skip:", e));
+import { skipUntil$ } from "./filtering-operators/skip-until";
+skipUntil$.subscribe(e => console.log("skip:", e));

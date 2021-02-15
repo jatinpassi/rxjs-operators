@@ -1,2 +1,2 @@
-import { sample1$ } from "./filtering-operators/sample";
-sample1$.subscribe(e => console.log("sample:", e));
+import { skip$ } from "./filtering-operators/skip";
+skip$.subscribe(e => console.log("skip:", e));

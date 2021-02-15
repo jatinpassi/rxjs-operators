@@ -1,4 +1,12 @@
-import { first$, first1$,first2$ } from "./filtering-operators/first";
-first$.subscribe(e => console.log("first:", e));
-first1$.subscribe(e => console.log("first1:", e));
-first2$.subscribe(e => console.log("first2:", e));
+import {
+  ignoreElements$,
+  ignoreElements1$,
+  ignoreElements2$
+} from "./filtering-operators/ignore-elements";
+ignoreElements$.subscribe(e => console.log("ignoreElements:", e));
+ignoreElements1$.subscribe(e => console.log("ignoreElements1:", e));
+ignoreElements2$.subscribe(
+  e => console.log("ignoreElements2:", e),
+  err => console.log(err),
+  () => console.log("SECOND COMPLETE!")
+);

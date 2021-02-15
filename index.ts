@@ -1,2 +1,2 @@
-import { distinctUntilKeyChanged$ } from "./filtering-operators/distinct-until-key-changed";
-distinctUntilKeyChanged$.subscribe(e => console.log("distinct:", e));
+import { filter$ } from "./filtering-operators/filter";
+filter$.subscribe(e => console.log("distinct:", e));

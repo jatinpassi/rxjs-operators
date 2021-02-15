@@ -1,12 +1,3 @@
-import {
-  ignoreElements$,
-  ignoreElements1$,
-  ignoreElements2$
-} from "./filtering-operators/ignore-elements";
-ignoreElements$.subscribe(e => console.log("ignoreElements:", e));
-ignoreElements1$.subscribe(e => console.log("ignoreElements1:", e));
-ignoreElements2$.subscribe(
-  e => console.log("ignoreElements2:", e),
-  err => console.log(err),
-  () => console.log("SECOND COMPLETE!")
-);
+import { last$, last1$ } from "./filtering-operators/last";
+last$.subscribe(e => console.log("ignoreElements:", e));
+last1$.subscribe(e => console.log("ignoreElements:", e));
